@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>ColorPicker</title>
+</head>
+<body>
+
+  <div class="app">
+
+    <fieldset class="radio-buttons">
+      <legend>Какой цвет меняем?</legend>
+      <label for="radio-textColor">Цвет текста</label>
+      <input value="textColor" type="radio" name="radio-buttons" id="radio-textColor">
+      <label for="radio-bgColor">Цвет фона</label>
+      <input value="bgColor" type="radio" name="radio-buttons" id="radio-bgColor">
+    </fieldset>
+
+    <fieldset class="select-buttons">
+      <legend>Какой канал цвета меняем?</legend>
+      <select name="colorChannel">
+        <option value="R">R (Красный)</option>
+        <option value="G">G (Зеленый)</option>
+        <option value="B">B (Синий)</option>
+      </select>
+    </fieldset>
+
+    <div class="slider">
+
+      <div class="slider__info">R</div>
+      <div class="slider__line-container">
+
+        <div class="slider__labels">
+
+          <label class="slider__label slider__label_left">0</label>
+          <label class="slider__label slider__label_current-value">444</label>
+          <label class="slider__label slider__label_right">255</label>
+
+        </div>
+
+        <div class="slider__line"></div>
+
+      </div>
+
+    </div>
+
+    <div class="demo-results">
+
+      <p class="demo-results__example">Но дальнейшее развитие различных форм деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов. Внезапно, непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+
+      <div class="demo-results__colors">
+
+        <p class="demo-results__color">
+          <span class="demo-results__color-value demo-results__color-value_text-color"></span>
+          <span class="demo-results__color-demo demo-results__color-demo_text-color"></span>
+          (R:
+            <span class="demo-results__channel" data-mode="textColor" data-channel="R">111</span>
+          G:
+            <span class="demo-results__channel" data-mode="textColor" data-channel="G">211</span>
+          B:
+            <span class="demo-results__channel" data-mode="textColor" data-channel="B">107</span>)
+          (Текст)
+        </p>
+        <p class="demo-results__color">
+          <span class="demo-results__color-value demo-results__color-value_bg-color"></span>
+          <span class="demo-results__color-demo demo-results__color-demo_bg-color"></span>
+          (R:
+            <span class="demo-results__channel" data-mode="bgColor" data-channel="R">111</span>
+          G:
+            <span class="demo-results__channel" data-mode="bgColor" data-channel="G">211</span>
+          B:
+            <span class="demo-results__channel" data-mode="bgColor" data-channel="B">107</span>)
+          (Фон)
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
